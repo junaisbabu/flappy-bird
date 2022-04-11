@@ -41,13 +41,13 @@ body {
     position: absolute;
     z-index: 1;
     left: calc(50% - 102px);
-    width: 204px;
+    width: 235px;
     top: 40%;
     text-align: center;
     color: rgb(255, 255, 74);
 }
 #gameoverscreen .title {
-    margin-top: -55px;
+    margin-top: -70px;
     font-size: 50px;
 }
 
