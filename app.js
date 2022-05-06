@@ -72,7 +72,7 @@ function setEventListeners() {
     }
   };
 }
-
+        
 function gameOver() {
   // game over sound effect
   (new Audio( '/sounds/gameover.wav' )).play()
@@ -213,7 +213,7 @@ function handleCharacterAnimation(direction) {
 }
 
 let numOfHoles = 0;
-let sountCount = 0;
+let soundCount = 0;
 
 function handleCharacterCollisions() {
   const colisionBlock = detectColision(character, block);
@@ -225,9 +225,10 @@ function handleCharacterCollisions() {
   }
     else if (colisionHole) {
     scoreTotal++;
+    console.log(scoreTotal);
 
-    sountCount++;
-    if (sountCount > 35) {
+    soundCount++;
+    if (soundCount > 35) {
       // play hole sound
       (new Audio( '/sounds/hole.wav' )).play()
       soundCount = 0
@@ -319,6 +320,7 @@ function showStar() {
 
     star.style.display = ''
     star.style.top = `${ getRandomNumber( 20, 70 )}%`
+    star.style.left = `${ getRandomNumber( 20, 70 )}%`
 }
 
 function hideStar() {
