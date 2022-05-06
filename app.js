@@ -83,7 +83,7 @@ function gameOver() {
   hideStar()
   stopBgAnimation()
 
-  console.log("gameOver");
+//   console.log("gameOver");
 }
 
 function resetCharacterPosition() {
@@ -225,7 +225,6 @@ function handleCharacterCollisions() {
   }
     else if (colisionHole) {
     scoreTotal++;
-    console.log(scoreTotal);
 
     soundCount++;
     if (soundCount > 35) {
